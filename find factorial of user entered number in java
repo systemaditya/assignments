@@ -1,0 +1,16 @@
+class Main
+{
+	public static int Factorial(int i)
+	{
+		if (i < 1)
+			return 1;
+
+		return i * Factorial(i - 1);
+	}
+
+		public static void main(String[] args)
+	{
+		int i = 13;
+		System.out.println("The Factorial of " + i + " is " + Factorial(i));
+	}
+}
