@@ -1,0 +1,16 @@
+Declare
+Cursor c
+Is select Emp_Name,Dept_Id,Emp_Experience from Employee;
+Employee_Name Employee.Emp_Name %type;
+Department_Id Employee.Dept_Id %type;
+Employee_Experience Employee.Emp_Experience %type;
+Begin
+Open c;
+Loop
+Fetch c into Employee_Name, Department_Id, Employee_Experience;
+Exit when c%notfound;
+dbms_output.put_line(Employee_Name||' is Working in dept'||Department_Id||' for '||Employee_Experience||' years ');
+   End loop;
+Close c;
+End;
+     /
