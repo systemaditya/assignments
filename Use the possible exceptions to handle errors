@@ -1,0 +1,17 @@
+Declare 
+id number;
+name varchar (20);
+salary number;
+Begin
+Select e_id , e_name , salary into id , name , salary from employee;
+Dbms_output.put_line(id|| ' '||name|| ' '||salary);
+Exception
+When no_data_found then
+Dbms_output.put_line('error');
+When too_many_rows then
+Dbms_output.put_line('to many rows');
+When id = 0 then
+Dbms_output.put_line('e_id is 0');
+When id<0 then
+Dbms_output.put_line('invalid id');
+End;
