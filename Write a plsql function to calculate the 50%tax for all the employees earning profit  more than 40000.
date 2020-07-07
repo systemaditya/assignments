@@ -1,0 +1,11 @@
+CREATE OR REPLACE FUNCTION tax_sal(sal employee.basic_salary%type)
+return number
+
+is
+tax number; 
+begin
+if(sal>40000) then
+   tax:=sal*0.5;
+end if; 
+return tax; 
+end;
