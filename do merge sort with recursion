@@ -1,0 +1,124 @@
+import java.util.Scanner;
+
+public class Main
+{
+
+  public static void main (String a[])
+  {
+
+    Scanner sc = new Scanner (System.in);
+
+      System.out.println("Author:D.Adity Varma\nSAP ID:51834693");
+      System.out.println ("Enter how many numbers should be sorted:");
+
+    int i = sc.nextInt ();
+
+
+    int[] list = new int[i];
+
+      System.out.println ("Enter " + i + " numbers 1 by 1");
+
+
+    for (int b = 0; b < i; b++)
+
+      {
+
+	int number = sc.nextInt ();
+
+	  list[b] = number;
+
+      }
+
+
+    System.out.println ("List before  sorting \n");
+
+    for (int b = 0; b < list.length; b++)
+
+      System.out.print (list[b] + "  ");
+
+    System.out.println ();
+
+
+    mergeSort (list, 0, list.length - 1);
+
+
+    System.out.print ("List after sorting \n");
+
+    for (int b = 0; b < list.length; b++)
+
+      System.out.print (list[b] + "  ");
+
+    System.out.println ();
+
+  }
+
+
+  public static void mergeSort (int list[], int low, int high)
+  {
+
+    if (low >= high)
+      {
+	return;
+      }
+
+
+    int middle = (low + high) / 2;
+
+    mergeSort (list, low, middle);
+
+    mergeSort (list, middle + 1, high);
+
+    merge (list, low, middle, high);
+
+
+  }
+
+
+  private static void merge (int list[], int low, int middle, int high)
+  {
+
+    int IstList_end = middle;
+
+    int IIndList_start = middle + 1;
+
+    int m = low;
+
+    while ((m <= IstList_end) && (IIndList_start <= high))
+
+      {
+
+	if (list[low] < list[IIndList_start])
+	  {
+
+	    low++;
+
+	  }
+	else
+	  {
+
+	    int temp = list[IIndList_start];
+
+	    for (int n = IIndList_start - 1; n >= low; n--)
+	      {
+
+		list[n + 1] = list[n];
+
+	      }
+
+	    list[low] = temp;
+
+	    low++;
+
+	    IstList_end++;
+
+	    IIndList_start++;
+
+	  }
+
+      }
+
+
+  }
+
+}
+
