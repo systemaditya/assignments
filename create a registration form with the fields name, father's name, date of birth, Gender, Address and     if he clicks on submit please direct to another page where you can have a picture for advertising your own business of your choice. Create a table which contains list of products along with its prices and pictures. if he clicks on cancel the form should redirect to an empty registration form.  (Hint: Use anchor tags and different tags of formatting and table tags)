@@ -1,0 +1,40 @@
+<head>
+		<title>registration form</title>
+		registration form
+	</head>
+	<body>
+		<form >
+			<label for="name">Name</label> <input type="text" name="name"/><br>
+			<label for="father name">fatherName</label><input type="text" name="father name"/><br>
+			<label for="date of birth">date of birth</label><input type="date" name="birthday"/><br>
+		<label for="gender">gender</label><select>
+			<option>male</option>
+			<option>female</option>
+		</select><br>
+	<label for="Address">Address</label> <textarea name="address"></textarea><br>
+		<a href="https://in.video.search.yahoo.com/yhs/search;_ylt=AwrwXxRWJgdfAhsAalXnHgx.;_ylu=X3oDMTEyc3BwODZpBGNvbG8Dc2czBHBvcwM0BHZ0aWQDQjg4NjhfMQRzZWMDc2M-?p=business+advertisements&fr=yhs-shnl-001&hspart=shnl&hsimp=yhs-001">
+		submit
+		</a><br>
+		<a href="C:\Users\Naidu\Desktop\html\html">cancel</a>
+		</form>
+		<table border="1px">
+			<thead>
+			  <tr>
+				<th>product</th>
+				<th>price</th>
+				<th>img</th>
+			  </tr>
+			</thead>
+			 <tr>
+				<td>realme 3i</td>
+				<td>8000</td>
+				<td><img src="https://in.images.search.yahoo.com/yhs/search?p=realme+3i+image&fr=yhs-shnl-001&hspart=shnl&hsimp=yhs-001&imgurl=https%3A%2F%2Fimages.fonearena.com%2Fblog%2Fwp-content%2Fuploads%2F2019%2F07%2FRealme-3i-1-968x1024.jpg#id=0&iurl=https%3A%2F%2Fimages.fonearena.com%2Fblog%2Fwp-content%2Fuploads%2F2019%2F07%2FRealme-3i-1-968x1024.jpg&action=click"></td>
+			  </tr>
+			   <tr>
+				<td>one plus</td>
+				<td>47000</td>
+				<td><img src="https://in.images.search.yahoo.com/yhs/search;_ylt=Awrxgq..KgdfhWoAgyHnHgx.;_ylu=X3oDMTE0MDBsNGxlBGNvbG8Dc2czBHBvcwMxBHZ0aWQDQjg4NjhfMQRzZWMDcGl2cw--?p=one+plus+3i+image&vm=r&type=990508934&param1=CH&param2=DS&param3=28666&param4=Bd3Wdyn5pQY7dPV41WGUs9HBiNG92rdu%2FBzHWpkDITdilPgbdKCxsZHXZMw3BmUCjHd%2FxsvB0ivu4U8osIvaFi0U4I5wXxOHwfElgR6ouV9Ga2yW0VLBGh%2Ftkytbgy9j6n3irAOWReeP2gvLJdwl4g%3D%3D&hsimp=yhs-001&hspart=shnl&ei=UTF-8&fr=yhs-shnl-001#id=0&iurl=http%3A%2F%2Fausdroid.net%2Fwp-content%2Fuploads%2F2016%2F06%2FOnePlus-3-Design-OnePlus.png&action=click"></td>
+			  </tr>
+		</table>
+	</body>
+</html>
